@@ -9,8 +9,10 @@ module.exports = {
   }
 },
   plugins: [require("daisyui"),
-  require('@tailwindcss/typography'),
-  require('@tailwindcss/forms'),
-  require('@tailwindcss/line-clamp'),
-  require('@tailwindcss/aspect-ratio')],
+  require("@tailwindcss/typography"),
+  require("@tailwindcss/forms")({
+    strategy: 'class',
+  }),
+  require("@tailwindcss/line-clamp"),
+  require("@tailwindcss/aspect-ratio")],
 }
